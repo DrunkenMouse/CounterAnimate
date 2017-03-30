@@ -7,23 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "CountNumView.h"
+
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    int i;//最大值
+    NSTimer *_timer;
+    IBOutlet CountNumView *_MenuNumView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    i = 9999;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(show) userInfo:nil repeats:YES];
+    _MenuNumView.length = 4;
+    [_MenuNumView showText:4];
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)show{
+    i--;
+    [_MenuNumView showText:_MenuNumView.number + 1];
+    if (i==0) {
+        [_timer invalidate];
+    }
 }
-
 
 @end

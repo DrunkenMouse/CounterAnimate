@@ -15,6 +15,7 @@
 		16E9425E1DF65E660073DFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E9425C1DF65E660073DFA4 /* LaunchScreen.storyboard */; };
 		16E942691DF65E660073DFA4 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E942681DF65E660073DFA4 /* ___Tests.m */; };
 		16E942741DF65E660073DFA4 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E942731DF65E660073DFA4 /* ___UITests.m */; };
+		16E942861DF660580073DFA4 /* CountNumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E942851DF660580073DFA4 /* CountNumView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		16E9426F1DF65E660073DFA4 /* 计数器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "计数器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E942731DF65E660073DFA4 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		16E942751DF65E660073DFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E942841DF660580073DFA4 /* CountNumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountNumView.h; sourceTree = "<group>"; };
+		16E942851DF660580073DFA4 /* CountNumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountNumView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				16E9425C1DF65E660073DFA4 /* LaunchScreen.storyboard */,
 				16E9425F1DF65E660073DFA4 /* Info.plist */,
 				16E9424E1DF65E660073DFA4 /* Supporting Files */,
+				16E942841DF660580073DFA4 /* CountNumView.h */,
+				16E942851DF660580073DFA4 /* CountNumView.m */,
 			);
 			path = "计数器";
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E942561DF65E660073DFA4 /* ViewController.m in Sources */,
+				16E942861DF660580073DFA4 /* CountNumView.m in Sources */,
 				16E942531DF65E660073DFA4 /* AppDelegate.m in Sources */,
 				16E942501DF65E660073DFA4 /* main.m in Sources */,
 			);
